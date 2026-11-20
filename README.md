@@ -1,0 +1,1 @@
+Attempting to implement a simple A* pathfinding algorithm, using godot for visualisation
