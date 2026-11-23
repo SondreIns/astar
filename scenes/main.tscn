@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d23c4r3egdx1u" path="res://scenes/Main.cs" id="1_o5qli"]
 [ext_resource type="TileSet" uid="uid://b18svwt52xs2n" path="res://assets/simpleTiles.tres" id="2_0wfyh"]
 [ext_resource type="TileSet" uid="uid://bvemgr7eyks6" path="res://assets/highlight.tres" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dwwaq3nibyr35" path="res://scenes/tile_node.tscn" id="4_jyhfs"]
 
 [node name="main" type="Node" unique_id=906408367]
 script = ExtResource("1_o5qli")
@@ -19,3 +20,10 @@ tile_set = ExtResource("2_0wfyh")
 
 [node name="Highlight" type="TileMapLayer" parent="Tilemaps" unique_id=380091087]
 tile_set = ExtResource("3_sugp2")
+
+[node name="StartNode" parent="." unique_id=1206071209 instance=ExtResource("4_jyhfs")]
+position = Vector2(480, 512)
+
+[node name="EndNode" parent="." unique_id=1372321855 instance=ExtResource("4_jyhfs")]
+position = Vector2(448, 64)
+IsStartNode = false

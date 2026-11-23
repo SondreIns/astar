@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dwwaq3nibyr35"]
+
+[ext_resource type="Script" uid="uid://c2b7tqiqf0aem" path="res://scenes/TileNode.cs" id="1_jxu5o"]
+[ext_resource type="Texture2D" uid="uid://c8utgc7tpb7wf" path="res://assets/simple.png" id="2_vd4ow"]
+
+[node name="TileNode" type="Node2D" unique_id=1206071209]
+script = ExtResource("1_jxu5o")
+IsStartNode = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=225910918]
+texture = ExtResource("2_vd4ow")
+centered = false
+region_enabled = true
+region_rect = Rect2(64, 0, 32, 32)
