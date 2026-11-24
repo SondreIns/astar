@@ -6,4 +6,5 @@ public static class ProjectConstants
     public const int TILE_SIZE = 32;
 
     public const string DEBUG_1 = "debug_1";
+    public const string DEBUG_2 = "debug_2";
 }

@@ -27,7 +27,7 @@ tile_set = ExtResource("2_0wfyh")
 tile_set = ExtResource("3_sugp2")
 
 [node name="StartNode" parent="." unique_id=1206071209 instance=ExtResource("4_jyhfs")]
-position = Vector2(480, 512)
+position = Vector2(672, 512)
 
 [node name="EndNode" parent="." unique_id=1372321855 instance=ExtResource("4_jyhfs")]
 position = Vector2(448, 64)
