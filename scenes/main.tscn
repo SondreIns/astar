@@ -5,8 +5,13 @@
 [ext_resource type="TileSet" uid="uid://bvemgr7eyks6" path="res://assets/highlight.tres" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dwwaq3nibyr35" path="res://scenes/tile_node.tscn" id="4_jyhfs"]
 
-[node name="main" type="Node" unique_id=906408367]
+[node name="main" type="Node" unique_id=906408367 node_paths=PackedStringArray("_walkable", "_obstacle", "_highlight", "_startNode", "_endNode")]
 script = ExtResource("1_o5qli")
+_walkable = NodePath("Tilemaps/Walkable")
+_obstacle = NodePath("Tilemaps/Obstacle")
+_highlight = NodePath("Tilemaps/Highlight")
+_startNode = NodePath("StartNode")
+_endNode = NodePath("EndNode")
 
 [node name="Tilemaps" type="Node2D" parent="." unique_id=2009015493]
 
