@@ -16,11 +16,13 @@ public class NavCell
     // Sum of Gcost and Hcost
     public int Fcost => Gcost + Hcost;
 
-    // Whether or not this node has been searched
-    public bool Searched { get; set; }
+    public NavCell Connection { get; private set ;}
 
     public NavCell(Vector2I tilePos)
     {
         TilePos = tilePos;
     }
+
+    // Connect cell to a neighbour for path.
+    public void Connect(NavCell cell) => Connection = cell;
 }
