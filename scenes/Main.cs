@@ -11,8 +11,11 @@ public partial class Main : Node
     [ExportGroup("Nodes")]
     [Export] private TileNode _startNode, _endNode;
 
+    private List<NavCell> _searched;
+
     public override void _Ready()
     {
+        _searched = new();
         GD.Print($"Start pos: {_startNode.TilePos}");
         GD.Print($"End pos: {_endNode.TilePos}");
     }
